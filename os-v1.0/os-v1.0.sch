@@ -10,8 +10,8 @@ Rev "1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "Add 0.1u decoupling capacitor to Vcc/Vdd for U1-U3,U6"
+Comment4 "All resistors and capacitors are 0603 unless otherwise noted"
 $EndDescr
 Text Label 8700 5400 2    50   ~ 0
 EN
