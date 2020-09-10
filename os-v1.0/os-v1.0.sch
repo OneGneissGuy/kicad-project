@@ -104,29 +104,25 @@ Wire Wire Line
 $Comp
 L Device:C_Small C1
 U 1 1 5F589FF4
-P 2000 6450
-F 0 "C1" V 1771 6450 50  0000 C CNN
-F 1 "4.7uF" V 1862 6450 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2000 6450 50  0001 C CNN
-F 3 "~" H 2000 6450 50  0001 C CNN
-	1    2000 6450
-	0    1    1    0   
+P 2000 6350
+F 0 "C1" H 1880 6300 50  0000 C CNN
+F 1 "4.7uF" H 1820 6370 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2000 6350 50  0001 C CNN
+F 3 "~" H 2000 6350 50  0001 C CNN
+	1    2000 6350
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR041
 U 1 1 5F58B01F
-P 2225 6500
-F 0 "#PWR041" H 2225 6250 50  0001 C CNN
-F 1 "GND" H 2230 6327 50  0000 C CNN
-F 2 "" H 2225 6500 50  0001 C CNN
-F 3 "" H 2225 6500 50  0001 C CNN
-	1    2225 6500
+P 2000 6500
+F 0 "#PWR041" H 2000 6250 50  0001 C CNN
+F 1 "GND" H 2075 6350 50  0000 C CNN
+F 2 "" H 2000 6500 50  0001 C CNN
+F 3 "" H 2000 6500 50  0001 C CNN
+	1    2000 6500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1900 6450 1800 6450
-Wire Wire Line
-	1800 6450 1800 6600
 $Comp
 L Device:R_Small R15
 U 1 1 5F591727
@@ -519,10 +515,6 @@ F 3 "" H 10025 5200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10025 5100 10025 5200
-Wire Wire Line
-	2100 6450 2225 6450
-Wire Wire Line
-	2225 6450 2225 6500
 NoConn ~ 10200 3350
 $Comp
 L open-Smartwatch:CH340E U6
@@ -1575,9 +1567,6 @@ Wire Wire Line
 Wire Wire Line
 	8400 1050 8400 750 
 Wire Wire Line
-	1800 6450 1800 6100
-Connection ~ 1800 6450
-Wire Wire Line
 	7550 1950 7550 2100
 $Comp
 L open-Smartwatch:SD_ebay-uSD-push_push_SMD XS1
@@ -2433,4 +2422,15 @@ Wire Wire Line
 	10100 3450 10100 2900
 Connection ~ 5300 6500
 Connection ~ 6300 6500
+Wire Wire Line
+	1800 6100 1800 6200
+Wire Wire Line
+	1800 6200 2000 6200
+Wire Wire Line
+	2000 6200 2000 6250
+Connection ~ 1800 6200
+Wire Wire Line
+	1800 6200 1800 6600
+Wire Wire Line
+	2000 6450 2000 6500
 $EndSCHEMATC
